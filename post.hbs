@@ -87,7 +87,8 @@ into the {body} of the default.hbs template --}}
         <!--</script>-->
         <div id="vcomments"></div>
         <script>
-            el: '#vcomments' ,
+            new Valine({
+                el: '#vcomments',
                 appId: 'OYm1lrGQxrRwsMTIRg0GtPsi-gzGzoHsz',
                 appKey: '6cK3hnkyKlC6ibvOOiKzVVVn',
                 notify:false,
@@ -95,7 +96,8 @@ into the {body} of the default.hbs template --}}
                 avatar:'mp',
                 visitor: true,
                 lang:'en',
-            placeholder: 'Talk is Cheep Show Me The Code!'
+                placeholder: 'Talk is Cheep Show Me The Code!'
+            })
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     </section>
